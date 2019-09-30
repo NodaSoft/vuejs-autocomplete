@@ -481,9 +481,6 @@ export default {
      * Close the results list. If nothing was selected clear the search
      */
     close () {
-      if (!this.value || !this.selectedDisplay) {
-        this.clear()
-      }
       if (this.selectedDisplay !== this.display && this.value) {
         this.display = this.selectedDisplay
       }
