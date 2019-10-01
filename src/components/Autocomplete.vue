@@ -387,7 +387,7 @@ export default {
         display: this.display,
         selectedObject: obj
       })
-      this.$emit('input', this.value)
+      this.$emit('input', obj)
       this.close()
     },
 
@@ -463,7 +463,7 @@ export default {
         return
       }
       this.select(this.results[this.selectedIndex])
-      this.$emit('enter', this.display)
+      this.$emit('enter', this.results[this.selectedIndex])
     },
 
     /**
