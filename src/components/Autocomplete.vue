@@ -380,7 +380,7 @@ export default {
         return
       }
       this.value = (this.resultsValue && obj[this.resultsValue]) ? obj[this.resultsValue] : obj.id
-      this.display = this.formatDisplay(obj)
+      this.display = obj.number
       this.selectedDisplay = this.display
       this.$emit('selected', {
         value: this.value,
